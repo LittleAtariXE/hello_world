@@ -10,9 +10,16 @@
 
 	<div id="notepad-add">
 		<form action="" method="POST">
+			{{ form.hidden_tag() }}
 
-			<input type="text" name="new"/>
-			<input type="submit" name="">
+			<h3 style="text-align: center"> {{ form.text.label }} </h3>
+			{{ form.text(id="notepad-text", rows=4) }}
+			<br/>
+			
+			{{ form.submit(id="notepad-submit") }}
+
+			<!-- <input type="text" name="new"/>
+			<input type="submit" name=""> -->
 		</form>
 	</div>
 </div>

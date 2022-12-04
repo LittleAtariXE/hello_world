@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div id="fake-logo">
+        <img src="{{ url_for('static', filename='img/ano2.jpg') }}" />
+        <span> Make Fake </span>
+        <img src="{{ url_for('static', filename='img/ano2.jpg') }}" />
+        <div style="clear: both;"></div>
+    </div>
+
+    <div id="fake-content">
+        {{ form.hidden_tag() }}
+        <p> {{ form.name.label(class="fi-label") }} </p>
+        {{ form.name(class="fake-input") }}
+        <p> {{ form.surname.label(class="fi-label") }} </p>
+        {{ form.surname(class="fake-input") }}
+    </div>
+
+{% endblock %}

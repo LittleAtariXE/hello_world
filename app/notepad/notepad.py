@@ -1,6 +1,7 @@
 import json
 import os
 
+
 notes_path = os.path.dirname(__file__) + '/notes.json'
 
 def load_json():

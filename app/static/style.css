@@ -93,6 +93,7 @@ body
 .square1:hover
 {
 	background-image: url("img/matrix1.jpg");
+
 }
 
 .square2
@@ -106,8 +107,95 @@ body
 
 #notepad-content
 {
-	width: 1000px;
+	width: 980px;
 	background-color: #a39880;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 20px;
+}
+
+#notepad-add
+{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#notepad-text
+{
+	white-space: pre-wrap;
+	font-size: 20px;
+	width: 400px;
+
+}
+
+#notepad-submit
+{
+	width: 200px;
+	height: 50px;
+	color: green;
+	font-size: 40px;
+
+}
+
+#notepad-submit:hover
+{
+	background-color: yellow;
+	width: 300px;
+	height: 70px;
+}
+
+#fake-logo
+{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 10px;
+
+}
+
+#fake-logo img
+{
+	width: 100px;
+	height: 70px;
+	object-fit: contain;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+#fake-logo span
+{
+	float: left;
+	font-size: 50px;
+	color: white;
+
+}
+
+#fake-content
+{
+	margin-top: 20px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('img/haker2.jpg');
+	text-align: center;
+}
+
+.fake-input
+{
+	padding: 10px;
+	font-size: 20px;
+	border: 2px solid darkred;
+}
+
+.fi-label
+{
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	background-color: black;
+	margin-top: 3px;
 }
