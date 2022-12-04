@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="notepad-content">
+	<h1> Notepad </h1>
+
+	{% for ind, note in notepad.notes.items() %}
+		<h2> {{ ind}} : {{ note }} </h2>
+	{% endfor %}
+
+	<div id="notepad-add">
+		<form action="" method="POST">
+
+			<input type="text" name="new"/>
+			<input type="submit" name="">
+		</form>
+	</div>
+</div>
+
+{% endblock %}
